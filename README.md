@@ -2,7 +2,7 @@
 
 An iOS app in Swift to demonstrate the use case of Core Image such as CIFilter, CIContext, and CIImage. 
 
-<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/final.png" width="400">
+<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/final.jpeg" width="400">
 
 
 ## Features 
@@ -29,7 +29,7 @@ currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
 
 Following is a category of filters:
 
-<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/filters.png" width="400">
+<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/filters.png" width="600">
 
 * [source](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_concepts/ci_concepts.html#//apple_ref/doc/uid/TP30001185-CH2-TPXREF101)
 
@@ -78,7 +78,7 @@ if let cgimg = context.createCGImage(image, from: image.extent) {
 }
 ```
 
-<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/saved.png" width="400">
+<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/saved.jpeg" width="400">
 
 
 ### The Execution Flow
@@ -110,4 +110,4 @@ This project follows the following order for setting a filter on an image:
 }
 ```
 
-<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/changeFilter.png" width="400">
+<img src="https://github.com/igibliss00/Instafilter/blob/master/README_assets/changeFilter.jpeg" width="400">
