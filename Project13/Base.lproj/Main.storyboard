@@ -91,6 +91,7 @@
                     <connections>
                         <outlet property="imageView" destination="v7U-1l-Bnd" id="bfe-Tz-rXV"/>
                         <outlet property="intensity" destination="Wgm-ZO-aqH" id="dUb-4a-uFB"/>
+                        <outlet property="intensityLabel" destination="sxv-3e-sN1" id="V8o-Zt-Ybl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
