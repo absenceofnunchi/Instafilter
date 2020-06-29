@@ -9,9 +9,9 @@ An iOS app in Swift to demonstrate the use case of Core Image such as CIFilter, 
 
 ### Core Image
 
-This project introduces the Core Image framework.  Core Image is Swift and Objective-C’s native solution for still and video processing, namely for applying filters.  One of the features I’ve first noticed when I started learning Swift is the amount of proprietary code hidden and immutable from the developers, which feels prohibiting and liberating at the same time.  Prohibiting in that I can’t do anything about the frameworks given to us and is forced to use in the way it was created, but liberating in that I don’t have to worry about how things work under the hood and I simply have to interact with the application programming interface (API).   Core Image is one of those cases.  
+This project introduces the Core Image framework.  Core Image is Swift and Objective-C’s native solution for still and video processing, namely for applying filters.  Swift and Objective-C contains a sizeable amount of proprietary code hidden and immutable from the developers, which feels prohibiting and liberating at the same time.  Prohibiting in that we can’t do anything about the frameworks given to us and is forced to use in the way they were created, but liberating in that we don’t have to worry about how things work under the hood and we simply have to interact with the application programming interface (API).   Core Image is one of those cases.  
 
-I provide the necessary data types to Core Image and the framework will work its magic with OpenGL, OpenGL ES, or Metal, leveraging the GPU and the multithreading with Grand Central Dispatch (GCD) all on its own.  I don’t have to know how OpenGL, how to fine-grain control GPU, nor do I have to worry with GCD.  
+You only have to provide the necessary data types to Core Image and the framework will work its magic with OpenGL, OpenGL ES, or Metal, leveraging the GPU and the multithreading with Grand Central Dispatch (GCD) all on its own.  You don’t have to know how OpenGL works, how to fine-grain control GPU, nor do you have to worry about the GCD.  
 
 ### CIImage
 
