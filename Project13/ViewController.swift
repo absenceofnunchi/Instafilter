@@ -27,6 +27,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @objc func importPicture() {
+        imageView.alpha = 0.1
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
@@ -36,6 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return }
         dismiss(animated: true, completion: nil)
+        
         currentImage = image
         
         let beginImage = CIImage(image: currentImage)
@@ -57,6 +59,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let cgimg = context.createCGImage(image, from: image.extent) {
             let processedImage = UIImage(cgImage: cgimg)
             imageView.image = processedImage
+            UIView.animate(withDuration: 2, delay: 0, options: [], animations: {
+                self.imageView.alpha = 1
+            }, completion: nil)
+            
         }
     }
     
